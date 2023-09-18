@@ -46,6 +46,7 @@ fun DiceRollerApp(){
 
 @Composable
 fun DiceWithButtonAndImage( modifier: Modifier = Modifier) {
+    // NÅr verdien endrer seg fra 1 vil den "trigge"
     var result by remember { mutableStateOf(1) }
     val imageResource = when (result) {
         1 -> R.drawable.dice_1
